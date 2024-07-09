@@ -1,36 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- <meta http-equiv="refresh" content="3"> -->
 		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="css/all.min.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/style.css">
-		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 		<title>Egy Party</title>
 	</head>
 	<body>
 		<section id="Home">
 			<div class="HomeOverlay d-flex justify-content-center align-items-center">
 				<div id="leftMenu" class="sidenav">
-					<a href="#" class="closebtn">×</a>
+					<span class="d-flex justify-content-end align-items-center me-3 mb-2">
+						<a href="#" class="closebtn"><i class="fa-solid fa-xmark"></i></a></span>
 					<a href="#Home">Home</a>
-					<a href="#sliderDown">Duration</a>
-					<a href="#count">Details</a>
+					<a href="#accordion">Duration</a>
+					<a href="#counter">Details</a>
 					<a href="#contact-us">Contact</a>
 				</div>
 				<div id="home-content">
 					<h2>Egyption Party</h2>
 					<p>Let's have Fun</p>
-					<span style="font-size:30px;cursor:pointer" class="openNav">☰ open</span>
+					<div id="openBtn">
+						<span><i class="fa-solid fa-bars"></i></span>
+						<span>open</span>
+					</div>
 				</div>
 			</div>
 		</section>
-		<section class="accordion">
+		<section id="accordion" class=" py-5 my-5">
+			<div class="container w-50 mx-auto">
+				<span
+					class=" text-center text-white singer d-block p-2 bg-danger fs-3 ">Singer
+					One</span>
+				<p class="song active">
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<span
+					class=" text-center text-white singer d-block p-2 bg-danger fs-3 ">Singer
+					Two</span>
+				<p class="song ">
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<span
+					class=" text-center text-white singer d-block p-2 bg-danger fs-3 ">Singer
+					Three</span>
+				<p class="song ">
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+				<span
+					class=" text-center text-white singer d-block p-2 bg-danger fs-3 ">Singer
+					Four</span>
+				<p class="song ">
+					"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+				</p>
+			</div>
 		</section>
-		<section class="counter"></section>
-		<footer></footer>
+		<section id="counter"></section>
+		<section id="contact-us"></section>
 		<script src="js/jquery-3.7.1.js"></script>
 		<script src="js/bootstrap.bundle.js"></script>
 		<script src="js/main.js"></script>
