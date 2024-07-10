@@ -53,7 +53,7 @@
 #openBtn {
   position: absolute;
   top: 50%;
-  left: 10px;
+  left: 16px;
   font-size: 1.875rem;
   cursor: pointer;
   transform: translateY(-50%);
@@ -75,8 +75,92 @@
   display: block;
 }
 
+#counter {
+  background-image: url(../images/invitation.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  height: 40dvh;
+}
+.counterOverlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(214, 46, 51, 0.6);
+  color: white;
+}
+
+.box {
+  border: 1px solid #fff;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 20px 0;
+}
+.icons > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;I
+  border: 1px solid #999;
+  width: 45px;
+  height: 45px;
+  line-height: 42px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s;
+}
+.icons > span > i {
+  font-size: 1rem;
+  color: #999;
+  transition: all 0.3s;
+}
+
+.icons span:hover {
+  color: #fff;
+  background-color: #d62e33;
+  border: 1px solid #d62e33;
+}
+.icons span:hover i {
+  color: #fff;
+}
+
+#contact-us .container {
+  font-family: -apple-system, Roboto, Oxygen, sans-serif;
+  color: #444;
+}
+#contact-us .container > h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#contact-us .container p {
+  color: #777;
+  font-weight: 300;
+  font-size: 16px;
+}
+.row .col-md-6 div > span {
+  font-size: 16px;
+  color: #444;
+}
 @media screen and (max-height: 450px) {
   .sidenav a {
     font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1140px;
   }
 }

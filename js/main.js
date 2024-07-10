@@ -20,7 +20,6 @@ $( "#leftMenu a" ).on( "click", function () {
 
 } )
 
-
 $( ".singer" ).on( "click", function ( e ) {
 	let currentState = $( e.currentTarget.nextElementSibling ).css( "display" );
 	if ( currentState !== "block" ) {
