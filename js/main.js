@@ -22,8 +22,9 @@ $( '.sidenav .closebtn' ).on( "click", function () {
 } )
 $( "#leftMenu a" ).on( "click", function () {
 	let sectionId = $( this ).attr( "href" );
+	console.log( sectionId );
 	let positionOfSection = $( sectionId ).offset().top;
-	$( "html , body" ).animate( { scrollTop: positionOfSection }, 2000 );
+	$( "html , body" ).animate( { scrollTop: positionOfSection }, 100 );
 
 } )
 $( ".singer" ).on( "click", function ( e ) {
