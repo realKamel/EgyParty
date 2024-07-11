@@ -88,25 +88,28 @@
 				<div class="container">
 					<div class="row justify-content-evenly align-items-center">
 						<div class="col-md-3">
-							<div class="box p-5"><span class="d-block  text-center">100
-									Days</span></div>
+							<div class="box p-5"><span id="daysCount" class="d-block text-center">0
+								</span></div>
 						</div>
 						<div class="col-md-3">
-							<div class="box p-5"><span class="d-block  text-center">100
-									Days</span></div>
+							<div class="box p-5">
+								<span id="hoursCount" class="d-block text-center">0</span>
+							</div>
 						</div><div class="col-md-3">
-							<div class="box p-5"><span class="d-block  text-center">100
-									Days</span></div>
+							<div class="box p-5">
+								<span id="minutesCount" class="d-block text-center">0</span>
+							</div>
 						</div><div class="col-md-3">
-							<div class="box p-5"><span class="d-block  text-center">100
-									Days</span></div>
+							<div class="box p-5">
+								<span id="secondsCount" class="d-block text-center">0</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="contact-us">
-			<div class="container pt-5 mt-5">
+			<div class="container py-5 my-5">
 				<h2>JOIN US</h2>
 				<p class="text-center">
 					Lorem ipsum dolor sit amet, consectetuer adipiscing
@@ -125,7 +128,7 @@
 						</div>
 						<div class="text-center mb-4 Email">
 							<span class="me-3"><i class="fa-solid fa-envelope"></i></span>
-							<span> hello@uigrid.com</span>
+							<span class="text-danger"> hello@uigrid.com</span>
 						</div>
 						<div class="text-center mb-4 phone">
 							<span class="me-3"><i class="fa-solid fa-phone-flip"></i></span>
@@ -139,7 +142,27 @@
 							<span><i class="fa-brands fa-pinterest-p"></i></span>
 						</div>
 					</div>
-					<div class="col-md-6">Column2</div>
+					<div class="col-md-6">
+						<div class="mb-3">
+							<input type="text" class="form-control rounded-0"
+								id="exampleFormControlInput1" placeholder="Enter your Name">
+						</div>
+						<div class="mb-3">
+							<input type="email" class="form-control rounded-0"
+								id="exampleFormControlInput2" placeholder="Enter Your Email">
+						</div>
+						<div class="mb-3">
+							<textarea class="form-control rounded-0" id="textArea"
+								placeholder="Enter a message"
+								rows="10"></textarea>
+						</div>
+						<div>
+							<span id="remainCharsCount" class="fs-4 pe-2 text-danger">100</span>
+							<span class="fs-6">characters remaining</span>
+						</div>
+						<button type="button" class="btn btn-danger btn-lg my-3 rounded-0">Send
+							Message</button>
+					</div>
 				</div>
 
 			</div>
