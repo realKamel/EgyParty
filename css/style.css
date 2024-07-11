@@ -94,7 +94,9 @@
   font-weight: 500;
   font-size: 30px;
 }
-
+.count {
+	font-variant-numeric: tabular-nums;
+}
 .icons {
   display: flex;
   align-items: center;
@@ -148,9 +150,36 @@
   font-size: 16px;
   color: #444;
 }
-@media screen and (max-height: 450px) {
+@media screen and (max-width: 470px) {
+  *{
+    color:aqua;
+  }
   .sidenav a {
     font-size: 18px;
+  }
+  #openBtn {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    font-size: 1.875rem;
+    cursor: pointer;
+    transition: all 0.5s;
+    filter: drop-shadow(0 0 3px black);
+  }
+  #counter {
+    height: 100dvh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  *{
+    color:green;
+  }
+  #openBtn {
+    top: 20px;
+  }
+  #counter {
+    height: 100dvh;
   }
 }
 
